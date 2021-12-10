@@ -13,7 +13,6 @@
         </ul>
       </div>
     </nav>
-
     <router-view :key="componentKey"  @forceRerender="forceRerender"/>
   </div>
 </template>
@@ -24,7 +23,6 @@ export default {
   name: 'App',
     data: ()=> ({
         componentKey:0
-
     }),
   computed: {
     ...mapGetters(['GET_CART'])
@@ -36,7 +34,6 @@ export default {
   },
 }
 </script>
-
 <style>
 nav li:hover,
 nav li .router-link-exact-active {

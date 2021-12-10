@@ -66,7 +66,7 @@ export default {
     },
   },
   methods: {
-    ...mapMutations(['REMOVE_CART', 'INCREMENT_CART_ITEM', 'DECREMENT_CART_ITEM', 'UPDATE_ELEMENT']),
+    ...mapMutations(['REMOVE_CART', 'INCREMENT_CART_ITEM', 'DECREMENT_CART_ITEM']),
     removeCart(id) {
       this.REMOVE_CART(id)
       this.$emit('forceRerender')
